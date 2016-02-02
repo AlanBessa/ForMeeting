@@ -42,6 +42,9 @@ namespace ForMeeting.Infra.Data.Persistencia.Mapeamentos
             Ignore(a => a.ValidationResult);
 
             //Relacionamentos
+            HasRequired(a => a.Usuario)
+                .WithRequiredDependent(u => u.Associado);
+
             HasMany(a => a.ListaDeComentariosFeitos)
                 .WithRequired(com => com.Associado);
 

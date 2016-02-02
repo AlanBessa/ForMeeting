@@ -16,9 +16,9 @@ namespace ForMeeting.Domain.Site.Validacoes.Scopes.Estados
             var estadoComPaisRequerido = new EstadoComPaisRequeridoSpecs();
 
             base.Add("EstadoComNomeRequerido", new Rule<Estado>(estadoComNomeRequerido, ErrorMessage.EstadoNomeObrigatorio));
-            base.Add("EstadoComNomeLimiteDeCaracteres", new Rule<Estado>(estadoComNomeLimiteDeCaracteres, ErrorMessage.EstadoNomeLimiteDeCaracteres));
+            base.Add("EstadoComNomeLimiteDeCaracteres", new Rule<Estado>(estadoComNomeLimiteDeCaracteres, string.Format(ErrorMessage.EstadoNomeLimiteDeCaracteres, 3, 60)));
             base.Add("EstadoComSiglaRequerido", new Rule<Estado>(estadoComSiglaRequerido, ErrorMessage.EstadoSiglaObrigatorio));
-            base.Add("EstadoComSiglaLimiteDeCaracteres", new Rule<Estado>(estadoComSiglaLimiteDeCaracteres, ErrorMessage.EstadoSiglaLimiteDeCaracteres));
+            base.Add("EstadoComSiglaLimiteDeCaracteres", new Rule<Estado>(estadoComSiglaLimiteDeCaracteres, string.Format(ErrorMessage.EstadoSiglaMaximaDeCaracteres, 2)));
             base.Add("EstadoComPaisRequerido", new Rule<Estado>(estadoComPaisRequerido, ErrorMessage.PaisObrigatorio));
         }
     }

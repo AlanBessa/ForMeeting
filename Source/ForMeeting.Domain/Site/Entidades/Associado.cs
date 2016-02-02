@@ -28,6 +28,10 @@ namespace ForMeeting.Domain.Site.Entidades
 
         public AtivacaoEnum StatusDeAtivacao { get; set; }
 
+        public Guid UsuarioId { get; set; }
+
+        public virtual Usuario Usuario { get; set; }
+
         public virtual ICollection<Evento> ListaDeEventosParticipante { get; set; }
 
         public virtual ICollection<Evento> ListaDeEventosCriado { get; set; }

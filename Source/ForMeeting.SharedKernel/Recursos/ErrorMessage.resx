@@ -132,6 +132,9 @@
   <data name="CidadeNomeObrigatorio" xml:space="preserve">
     <value>Nome da cidade é obrigatório.</value>
   </data>
+  <data name="ComentarioDescricaoLimiteDeCaracteres" xml:space="preserve">
+    <value>Descrição do comentario dever possuir de {0} à {1} caracteres.</value>
+  </data>
   <data name="ComentarioInvalido" xml:space="preserve">
     <value>Comentário inválido.</value>
   </data>
@@ -168,8 +171,8 @@
   <data name="EstadoObrigatorio" xml:space="preserve">
     <value>Estado é obrigatório.</value>
   </data>
-  <data name="EstadoSiglaLimiteDeCaracteres" xml:space="preserve">
-    <value>Sigla do estado dever possuir de {0} à {1} caracteres.</value>
+  <data name="EstadoSiglaMaximaDeCaracteres" xml:space="preserve">
+    <value>Sigla do estado dever possuir possuir no máximo {0}  caracteres.</value>
   </data>
   <data name="EstadoSiglaObrigatorio" xml:space="preserve">
     <value>Sigla do estado é obrigatório.</value>
@@ -195,8 +198,14 @@
   <data name="EventoTituloObrigatorio" xml:space="preserve">
     <value>Título do evento é obrigatório.</value>
   </data>
+  <data name="LocalidadeBairroLimiteDeCaracteres" xml:space="preserve">
+    <value>Bairro da localidade dever possuir de {0} à {1} caracteres.</value>
+  </data>
   <data name="LocalidadeBairroObrigatorio" xml:space="preserve">
     <value>Bairro da localidade é obrigatório.</value>
+  </data>
+  <data name="LocalidadeCepComSeteCaracteres" xml:space="preserve">
+    <value>CEP da localidade deve ter 7 caracteres.</value>
   </data>
   <data name="LocalidadeCepInvalido" xml:space="preserve">
     <value>CEP da localidade inválido.</value>
@@ -204,11 +213,20 @@
   <data name="LocalidadeCidadeObrigatorio" xml:space="preserve">
     <value>Cidade da localidade é obrigatório.</value>
   </data>
+  <data name="LocalidadeComComplementoMaximoDeCaracteres" xml:space="preserve">
+    <value>Complemento da localidade dever possuir no máximo {0}. caracteres.</value>
+  </data>
+  <data name="LocalidadeComReferenciaMaximaDeCaracteres" xml:space="preserve">
+    <value>Referência da localidade dever possuir no máximo {0}. caracteres.</value>
+  </data>
   <data name="LocalidadeEstadoMaximoTresCaracteres" xml:space="preserve">
     <value>Estado da localidade dever possuir no máximo de 2 caracteres.</value>
   </data>
   <data name="LocalidadeEstadoObrigatorio" xml:space="preserve">
     <value>Estado da localidade é obrigatório.</value>
+  </data>
+  <data name="LocalidadeLogradouroLimiteDeCaracteres" xml:space="preserve">
+    <value>Logradouro da localidade dever possuir de {0} à {1} caracteres.</value>
   </data>
   <data name="LocalidadeLogradouroObrigatorio" xml:space="preserve">
     <value>Logradouro da localidade é obrigatório.</value>
@@ -252,7 +270,16 @@
   <data name="PaisSiglaLimiteDeCaracteres" xml:space="preserve">
     <value>Sigla do país dever possuir de {0} à {1} caracteres.</value>
   </data>
+  <data name="SenhaObrigatorio" xml:space="preserve">
+    <value>Senha é obrigatório.</value>
+  </data>
   <data name="SenhasNaoCompativeis" xml:space="preserve">
     <value>Confirmar Senha não compativel com Senha.</value>
+  </data>
+  <data name="UsuarioEmailLimiteDeCaracteres" xml:space="preserve">
+    <value>E-mail do usuário dever possuir de {0} à {1} caracteres.</value>
+  </data>
+  <data name="UsuarioSenhaLimiteDeCaracteres" xml:space="preserve">
+    <value>Senha dever possuir de {0} à {1} caracteres.</value>
   </data>
 </root>

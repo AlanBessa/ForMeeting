@@ -19,8 +19,6 @@ namespace ForMeeting.Domain.Site.Entidades
 
         public string NomeDaLocalidade { get; set; }
 
-        public string TipoDaLocalidade { get; set; }
-
         public string Logradouro { get; set; }
 
         public int Numero { get; set; }
@@ -36,10 +34,8 @@ namespace ForMeeting.Domain.Site.Entidades
         public Guid CidadeId { get; set; }
 
         public virtual Cidade Cidade { get; set; }        
-
-        public Guid EventoId { get; set; }
-
-        public virtual Evento Evento { get; set; }
+        
+        public virtual ICollection<Evento> ListaDeEventos { get; set; }
 
         public ValidationResult ValidationResult { get; set; }
 

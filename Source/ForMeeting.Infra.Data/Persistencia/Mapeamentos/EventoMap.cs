@@ -49,7 +49,8 @@ namespace ForMeeting.Infra.Data.Persistencia.Mapeamentos
                 .HasForeignKey(e => e.CriadorId);
 
             HasRequired(e => e.Localidade)
-                .WithRequiredPrincipal(l => l.Evento);
+                .WithMany(l => l.ListaDeEventos)
+                .HasForeignKey(e => e.LocalidadeId);
 
             HasRequired(e => e.Categoria)
                 .WithMany(c => c.ListaDeEventos)

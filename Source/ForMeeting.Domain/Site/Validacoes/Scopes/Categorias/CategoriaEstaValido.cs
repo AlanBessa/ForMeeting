@@ -13,7 +13,7 @@ namespace ForMeeting.Domain.Site.Validacoes.Scopes.Categorias
             var categoriaComNomeLimiteDeCaracteres = new CategoriaComNomeLimiteDeCaracteresSpecs();
 
             base.Add("CategoriaComNomeRequerido", new Rule<Categoria>(categoriaComNomeRequerido, ErrorMessage.CategoriaNomeObrigatorio));
-            base.Add("CategoriaComNomeLimiteDeCaracteres", new Rule<Categoria>(categoriaComNomeLimiteDeCaracteres, ErrorMessage.CategoriaNomeLimiteDeCaracteres));
+            base.Add("CategoriaComNomeLimiteDeCaracteres", new Rule<Categoria>(categoriaComNomeLimiteDeCaracteres, string.Format(ErrorMessage.CategoriaNomeLimiteDeCaracteres, 3, 80)));
         }
     }
 }

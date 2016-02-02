@@ -9,7 +9,7 @@ namespace ForMeeting.Domain.Site.Validacoes.Specs.Categorias
         public bool IsSatisfiedBy(Categoria categoria)
         {
             var validarTamanhoMinimoDoCampoNome = CampoTextoValidation.ValidarTamanhoMinimoDoTexto(3, categoria.Nome);
-            var validarTamanhoMaximoDoCampoNome = CampoTextoValidation.ValidarTamanhoMaximoDoTexto(100, categoria.Nome);
+            var validarTamanhoMaximoDoCampoNome = CampoTextoValidation.ValidarTamanhoMaximoDoTexto(80, categoria.Nome);
 
             return validarTamanhoMinimoDoCampoNome && validarTamanhoMaximoDoCampoNome;
         }

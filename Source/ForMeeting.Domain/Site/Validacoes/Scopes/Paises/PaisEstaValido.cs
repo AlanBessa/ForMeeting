@@ -14,8 +14,8 @@ namespace ForMeeting.Domain.Site.Validacoes.Scopes.Paises
             var paisComSiglaLimiteDeCaracteres = new PaisComSiglaLimiteDeCaracteresSpecs();
 
             base.Add("PaisComNomeRequerido", new Rule<Pais>(paisComNomeRequerido, ErrorMessage.CategoriaNomeObrigatorio));
-            base.Add("PaisComNomeLimiteDeCaracteres", new Rule<Pais>(paisComNomeLimiteDeCaracteres, ErrorMessage.CategoriaNomeLimiteDeCaracteres));
-            base.Add("PaisComSiglaLimiteDeCaracteres", new Rule<Pais>(paisComSiglaLimiteDeCaracteres, ErrorMessage.CategoriaNomeLimiteDeCaracteres));
+            base.Add("PaisComNomeLimiteDeCaracteres", new Rule<Pais>(paisComNomeLimiteDeCaracteres, string.Format(ErrorMessage.PaisNomeLimiteDeCaracteres, 3, 50)));
+            base.Add("PaisComSiglaLimiteDeCaracteres", new Rule<Pais>(paisComSiglaLimiteDeCaracteres, string.Format(ErrorMessage.PaisSiglaLimiteDeCaracteres, 2, 3)));
         }
     }
 }

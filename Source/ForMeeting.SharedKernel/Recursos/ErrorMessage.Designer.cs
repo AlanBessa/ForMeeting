@@ -106,6 +106,15 @@ namespace ForMeeting.SharedKernel.Recursos {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Descrição do comentario dever possuir de {0} à {1} caracteres..
+        /// </summary>
+        public static string ComentarioDescricaoLimiteDeCaracteres {
+            get {
+                return ResourceManager.GetString("ComentarioDescricaoLimiteDeCaracteres", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Comentário inválido..
         /// </summary>
         public static string ComentarioInvalido {
@@ -214,11 +223,11 @@ namespace ForMeeting.SharedKernel.Recursos {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sigla do estado dever possuir de {0} à {1} caracteres..
+        ///   Looks up a localized string similar to Sigla do estado dever possuir possuir no máximo {0}  caracteres..
         /// </summary>
-        public static string EstadoSiglaLimiteDeCaracteres {
+        public static string EstadoSiglaMaximaDeCaracteres {
             get {
-                return ResourceManager.GetString("EstadoSiglaLimiteDeCaracteres", resourceCulture);
+                return ResourceManager.GetString("EstadoSiglaMaximaDeCaracteres", resourceCulture);
             }
         }
         
@@ -295,11 +304,29 @@ namespace ForMeeting.SharedKernel.Recursos {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bairro da localidade dever possuir de {0} à {1} caracteres..
+        /// </summary>
+        public static string LocalidadeBairroLimiteDeCaracteres {
+            get {
+                return ResourceManager.GetString("LocalidadeBairroLimiteDeCaracteres", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bairro da localidade é obrigatório..
         /// </summary>
         public static string LocalidadeBairroObrigatorio {
             get {
                 return ResourceManager.GetString("LocalidadeBairroObrigatorio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CEP da localidade deve ter 7 caracteres..
+        /// </summary>
+        public static string LocalidadeCepComSeteCaracteres {
+            get {
+                return ResourceManager.GetString("LocalidadeCepComSeteCaracteres", resourceCulture);
             }
         }
         
@@ -322,6 +349,24 @@ namespace ForMeeting.SharedKernel.Recursos {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Complemento da localidade dever possuir no máximo {0}. caracteres..
+        /// </summary>
+        public static string LocalidadeComComplementoMaximoDeCaracteres {
+            get {
+                return ResourceManager.GetString("LocalidadeComComplementoMaximoDeCaracteres", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Referência da localidade dever possuir no máximo {0}. caracteres..
+        /// </summary>
+        public static string LocalidadeComReferenciaMaximaDeCaracteres {
+            get {
+                return ResourceManager.GetString("LocalidadeComReferenciaMaximaDeCaracteres", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Estado da localidade dever possuir no máximo de 2 caracteres..
         /// </summary>
         public static string LocalidadeEstadoMaximoTresCaracteres {
@@ -336,6 +381,15 @@ namespace ForMeeting.SharedKernel.Recursos {
         public static string LocalidadeEstadoObrigatorio {
             get {
                 return ResourceManager.GetString("LocalidadeEstadoObrigatorio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Logradouro da localidade dever possuir de {0} à {1} caracteres..
+        /// </summary>
+        public static string LocalidadeLogradouroLimiteDeCaracteres {
+            get {
+                return ResourceManager.GetString("LocalidadeLogradouroLimiteDeCaracteres", resourceCulture);
             }
         }
         
@@ -466,11 +520,38 @@ namespace ForMeeting.SharedKernel.Recursos {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Senha é obrigatório..
+        /// </summary>
+        public static string SenhaObrigatorio {
+            get {
+                return ResourceManager.GetString("SenhaObrigatorio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Confirmar Senha não compativel com Senha..
         /// </summary>
         public static string SenhasNaoCompativeis {
             get {
                 return ResourceManager.GetString("SenhasNaoCompativeis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E-mail do usuário dever possuir de {0} à {1} caracteres..
+        /// </summary>
+        public static string UsuarioEmailLimiteDeCaracteres {
+            get {
+                return ResourceManager.GetString("UsuarioEmailLimiteDeCaracteres", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Senha dever possuir de {0} à {1} caracteres..
+        /// </summary>
+        public static string UsuarioSenhaLimiteDeCaracteres {
+            get {
+                return ResourceManager.GetString("UsuarioSenhaLimiteDeCaracteres", resourceCulture);
             }
         }
     }

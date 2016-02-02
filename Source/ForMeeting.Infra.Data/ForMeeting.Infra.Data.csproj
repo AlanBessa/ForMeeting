@@ -55,8 +55,14 @@
     <Compile Include="Persistencia\Contextos\ForMeetingContext.cs" />
     <Compile Include="Persistencia\Contextos\Interfaces\IContextManager.cs" />
     <Compile Include="Persistencia\Mapeamentos\AssociadoMap.cs" />
+    <Compile Include="Persistencia\Mapeamentos\CategoriaMap.cs" />
+    <Compile Include="Persistencia\Mapeamentos\CidadeMap.cs" />
     <Compile Include="Persistencia\Mapeamentos\ComentarioMap.cs" />
+    <Compile Include="Persistencia\Mapeamentos\EstadoMap.cs" />
     <Compile Include="Persistencia\Mapeamentos\EventoMap.cs" />
+    <Compile Include="Persistencia\Mapeamentos\LocalidadeMap.cs" />
+    <Compile Include="Persistencia\Mapeamentos\PaisMap.cs" />
+    <Compile Include="Persistencia\Mapeamentos\UsuarioMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -9,8 +9,9 @@ namespace ForMeeting.Domain.Site.Validacoes.Specs.Estados
         public bool IsSatisfiedBy(Estado estado)
         {
             var validarTamanhoMinimoDoCampoSigla = CampoTextoValidation.ValidarTamanhoMinimoDoTexto(2, estado.Sigla);
+            var validarTamanhoMaximoDoCampoSigla = CampoTextoValidation.ValidarTamanhoMaximoDoTexto(2, estado.Sigla);
 
-            return validarTamanhoMinimoDoCampoSigla;
+            return (validarTamanhoMinimoDoCampoSigla && validarTamanhoMaximoDoCampoSigla);
         }
     }
 }

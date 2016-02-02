@@ -68,6 +68,7 @@
     <Compile Include="Site\Validacoes\Scopes\Localidades\LocalidadeEstaValido.cs" />
     <Compile Include="Site\Validacoes\Specs\Categorias\CategoriaComNomeLimiteDeCaracteresSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Categorias\CategoriaComNomeRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Comentarios\ComentarioComDescricaoLimiteDeCaracteresSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Estados\EstadoComNomeLimiteDeCaracteresSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Estados\EstadoComNomeRequeridoSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Estados\EstadoComPaisRequeridoSpecs.cs" />
@@ -84,25 +85,30 @@
     <Compile Include="Site\Validacoes\Specs\Comentarios\ComentarioComDescricaoValidaSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Comentarios\ComentarioComEventoRequeridoSpecs.cs" />
     <Compile Include="Site\Validacoes\Scopes\Eventos\EventoEstaValido.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComBairroLimiteDeCaracteresSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComBairroRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComCepDeSeteCaracteresSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComCepValidoSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComCidadeRequeridoSpecs.cs" />
-    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComEventoObrigatorioSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComComplementoMaximoDeCaracteresSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComLogradouroLimiteDeCaracteresSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComLogradouroRequeridoSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComNomeLimiteDeCaracteresSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComNomeRequeridoSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComNumeroRequeridoSpecs.cs" />
-    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComTipoLimiteDeCaracteresSpecs.cs" />
-    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComTipoRequeridoSpecs.cs" />
     <Compile Include="Site\Validacoes\Scopes\Paises\PaisEstaValido.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComReferenciaMaximaDeCaracteresSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Paises\PaisComNomeLimiteDeCaracteresSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Paises\PaisComNomeRequeridoSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Paises\PaisComSiglaLimiteDeCaracteresSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Usuarios\UsuarioComCampoEmailLimiteDeCaracteresSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Usuarios\UsuarioComCampoEmailRequeridoSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Usuarios\UsuarioComCampoEmailValidoSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Associados\AssociadoComCampoNomeValidoSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Associados\AssociadoComDataDeNascimentoValidoSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Associados\AssociadoPossueCpfValidoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Usuarios\UsuarioComCampoSenhaLimiteDeCaracteresSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Usuarios\UsuarioComCampoSenhaRequeridoSpecs.cs" />
     <Compile Include="Site\Validacoes\Specs\Usuarios\UsuarioDevePossuirEmailUnicoCadastradoSpecs.cs" />
   </ItemGroup>
   <ItemGroup>

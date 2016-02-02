@@ -14,7 +14,7 @@ namespace ForMeeting.Domain.Site.Validacoes.Scopes.Cidades
             var cidadeComEstadoRequerido = new CidadeComEstadoRequeridoSpecs();
 
             base.Add("CidadeComNomeRequerido", new Rule<Cidade>(cidadeComNomeRequerido, ErrorMessage.CidadeNomeObrigatorio));
-            base.Add("CidadeComNomeLimiteDeCaracteres", new Rule<Cidade>(cidadeComNomeLimiteDeCaracteres, ErrorMessage.CidadeNomeLimiteDeCaracteres));
+            base.Add("CidadeComNomeLimiteDeCaracteres", new Rule<Cidade>(cidadeComNomeLimiteDeCaracteres, string.Format(ErrorMessage.CidadeNomeLimiteDeCaracteres, 3, 80)));
             base.Add("CidadeComEstadoRequerido", new Rule<Cidade>(cidadeComEstadoRequerido, ErrorMessage.EstadoObrigatorio));
         }
     }
