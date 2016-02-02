@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace ForMeeting.Domain.Site.Interfaces.Repositorios
 {
-    public interface IAssociadoRepository : IBaseRepository<Associado>
+    public interface IComentarioRepository : IBaseRepository<Comentario>
     {
-        Associado ObterPorCPF(string cpf);
+        IEnumerable<Comentario> ObterTodosPorEventoId(Guid idEvento);
     }
 }

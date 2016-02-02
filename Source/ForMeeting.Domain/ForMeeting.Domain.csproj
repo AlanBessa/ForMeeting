@@ -53,7 +53,33 @@
     <Compile Include="Site\Enum\PapelEnum.cs" />
     <Compile Include="Site\Enum\StatusDoEventoEnum.cs" />
     <Compile Include="Site\Interfaces\Repositorios\IAssociadoRepository.cs" />
+    <Compile Include="Site\Interfaces\Repositorios\IBaseRepository.cs" />
+    <Compile Include="Site\Interfaces\Repositorios\ICategoriaRepository.cs" />
+    <Compile Include="Site\Interfaces\Repositorios\ICidadeRepository.cs" />
+    <Compile Include="Site\Interfaces\Repositorios\IComentarioRepository.cs" />
+    <Compile Include="Site\Interfaces\Repositorios\IEstadoRepository.cs" />
+    <Compile Include="Site\Interfaces\Repositorios\IEventoRepository.cs" />
+    <Compile Include="Site\Interfaces\Repositorios\ILocalidadeRepository.cs" />
+    <Compile Include="Site\Interfaces\Repositorios\IPaisRepository.cs" />
     <Compile Include="Site\Interfaces\Repositorios\IUsuarioRepository.cs" />
+    <Compile Include="Site\Interfaces\Servicos\IAssociadoService.cs" />
+    <Compile Include="Site\Interfaces\Servicos\ICategoriaService.cs" />
+    <Compile Include="Site\Interfaces\Servicos\ICidadeService.cs" />
+    <Compile Include="Site\Interfaces\Servicos\IComentarioService.cs" />
+    <Compile Include="Site\Interfaces\Servicos\IEstadoService.cs" />
+    <Compile Include="Site\Interfaces\Servicos\IEventoService.cs" />
+    <Compile Include="Site\Interfaces\Servicos\ILocalidadeService.cs" />
+    <Compile Include="Site\Interfaces\Servicos\IPaisService.cs" />
+    <Compile Include="Site\Interfaces\Servicos\IUsuarioService.cs" />
+    <Compile Include="Site\Servicos\AssociadoService.cs" />
+    <Compile Include="Site\Servicos\CategoriaService.cs" />
+    <Compile Include="Site\Servicos\CidadeService.cs" />
+    <Compile Include="Site\Servicos\ComentarioService.cs" />
+    <Compile Include="Site\Servicos\EstadoService.cs" />
+    <Compile Include="Site\Servicos\EventoService.cs" />
+    <Compile Include="Site\Servicos\LocalidadeService.cs" />
+    <Compile Include="Site\Servicos\PaisService.cs" />
+    <Compile Include="Site\Servicos\UsuarioService.cs" />
     <Compile Include="Site\Validacoes\Scopes\Associados\AssociadoEstaAptoParaCadastro.cs" />
     <Compile Include="Site\Validacoes\Scopes\Associados\AssociadoEstaValido.cs" />
     <Compile Include="Site\Validacoes\Scopes\Categorias\CategoriaEstaValido.cs" />
@@ -114,10 +140,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Site\Interfaces\Servicos\" />
-    <Folder Include="Site\Servicos\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ForMeeting.SharedKernel\ForMeeting.SharedKernel.csproj">
       <Project>{401a1401-2175-480b-9a0b-b5da2a09a7e0}</Project>

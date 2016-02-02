@@ -1,14 +1,14 @@
 ﻿using ForMeeting.Domain.Site.Entidades;
+using ForMeeting.Domain.Site.Interfaces.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForMeeting.Domain.Site.Interfaces.Repositorios
+namespace ForMeeting.Infra.Data.Repositorios
 {
-    public interface IAssociadoRepository : IBaseRepository<Associado>
+    public class PaisRepository : BaseRepository<Pais>, IPaisRepository
     {
-        Associado ObterPorCPF(string cpf);
     }
 }

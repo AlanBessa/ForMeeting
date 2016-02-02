@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace ForMeeting.Domain.Site.Interfaces.Repositorios
 {
-    public interface IAssociadoRepository : IBaseRepository<Associado>
+    public interface IEstadoRepository : IBaseRepository<Estado>
     {
-        Associado ObterPorCPF(string cpf);
     }
 }

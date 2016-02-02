@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=1.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Dapper.1.42\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="DomainValidation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\DomainValidation.1.0.0\lib\net451\DomainValidation.dll</HintPath>
       <Private>True</Private>
@@ -45,6 +49,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201602021806230_Initial.cs" />
+    <Compile Include="Migrations\201602021806230_Initial.Designer.cs">
+      <DependentUpon>201602021806230_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Persistencia\Contextos\ContextManager.cs" />
     <Compile Include="Persistencia\Contextos\ForMeetingContext.cs" />
     <Compile Include="Persistencia\Contextos\Interfaces\IContextManager.cs" />
     <Compile Include="Persistencia\Mapeamentos\AssociadoMap.cs" />
@@ -64,11 +75,20 @@
     <Compile Include="Persistencia\Mapeamentos\PaisMap.cs" />
     <Compile Include="Persistencia\Mapeamentos\UsuarioMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\AssociadoRepository.cs" />
+    <Compile Include="Repositorios\BaseRepository.cs" />
+    <Compile Include="Repositorios\CategoriaRepository.cs" />
+    <Compile Include="Repositorios\CidadeRepository.cs" />
+    <Compile Include="Repositorios\ComentarioRepository.cs" />
+    <Compile Include="Repositorios\EstadoRepository.cs" />
+    <Compile Include="Repositorios\EventoRepository.cs" />
+    <Compile Include="Repositorios\LocalidadeRepository.cs" />
+    <Compile Include="Repositorios\PaisRepository.cs" />
+    <Compile Include="Repositorios\UsuarioRepository.cs" />
+    <Compile Include="UnitOfWork\Interface\IUnitOfWork.cs" />
+    <Compile Include="UnitOfWork\UnitOfWork.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositorios\" />
-    <Folder Include="UnitOfWork\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
@@ -78,6 +98,15 @@
       <Project>{264f14d0-7d5a-47a3-ad06-1dd990971baf}</Project>
       <Name>ForMeeting.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ForMeeting.Infra.CrossCutting.Common\ForMeeting.Infra.CrossCutting.Common.csproj">
+      <Project>{5c0372c1-3cc0-485d-a507-0f0faa92940d}</Project>
+      <Name>ForMeeting.Infra.CrossCutting.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201602021806230_Initial.resx">
+      <DependentUpon>201602021806230_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
