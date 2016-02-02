@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AssociadoObrigatorio" xml:space="preserve">
+    <value>O autor é obrigatório.</value>
+  </data>
+  <data name="CategoriaNomeLimiteDeCaracteres" xml:space="preserve">
+    <value>Nome da categoria dever possuir de {0} à {1} caracteres.</value>
+  </data>
+  <data name="CategoriaNomeObrigatorio" xml:space="preserve">
+    <value>Nome da categoria é obrigatório.</value>
+  </data>
+  <data name="CidadeNomeLimiteDeCaracteres" xml:space="preserve">
+    <value>Nome da cidade dever possuir de {0} à {1} caracteres.</value>
+  </data>
+  <data name="CidadeNomeObrigatorio" xml:space="preserve">
+    <value>Nome da cidade é obrigatório.</value>
+  </data>
+  <data name="ComentarioInvalido" xml:space="preserve">
+    <value>Comentário inválido.</value>
+  </data>
+  <data name="CpfInvalido" xml:space="preserve">
+    <value>Cpf inválido.</value>
+  </data>
+  <data name="CpfJaCadastrado" xml:space="preserve">
+    <value>Este CPF já se encontra cadastrado à um cliente no sistema.</value>
+  </data>
+  <data name="CpfObrigatorio" xml:space="preserve">
+    <value>O CPF é obrigatório.</value>
+  </data>
+  <data name="DataDeNascimentoFormatacaoInvalida" xml:space="preserve">
+    <value>O formato da Data de Nascimento é inválido.</value>
+  </data>
+  <data name="DataDeNascimentoInvalida" xml:space="preserve">
+    <value>Data de nascimento inválido. Usuário deve ser maior de idade.</value>
+  </data>
+  <data name="EmailInvalido" xml:space="preserve">
+    <value>E-mail inválido.</value>
+  </data>
+  <data name="EmailJaCadastrado" xml:space="preserve">
+    <value>Este E-mail já se encontra cadastrado à um cliente no sistema.</value>
+  </data>
+  <data name="EmailObrigatorio" xml:space="preserve">
+    <value>O e-mail é obrigatório.</value>
+  </data>
+  <data name="EstadoNomeLimiteDeCaracteres" xml:space="preserve">
+    <value>Nome do estado dever possuir de {0} à {1} caracteres.</value>
+  </data>
+  <data name="EstadoNomeObrigatorio" xml:space="preserve">
+    <value>Nome do estado é obrigatório.</value>
+  </data>
+  <data name="EstadoObrigatorio" xml:space="preserve">
+    <value>Estado é obrigatório.</value>
+  </data>
+  <data name="EstadoSiglaLimiteDeCaracteres" xml:space="preserve">
+    <value>Sigla do estado dever possuir de {0} à {1} caracteres.</value>
+  </data>
+  <data name="EstadoSiglaObrigatorio" xml:space="preserve">
+    <value>Sigla do estado é obrigatório.</value>
+  </data>
+  <data name="EventoCriadorObrigatorio" xml:space="preserve">
+    <value>Usuário/Autor do evento é obrigatório.</value>
+  </data>
+  <data name="EventoDescricaoLimiteDeCaracteres" xml:space="preserve">
+    <value>Descrição do evento dever possuir de {0} à {1}  caracteres.</value>
+  </data>
+  <data name="EventoDescricaoObrigatorio" xml:space="preserve">
+    <value>Descrição do evento é obrigatório.</value>
+  </data>
+  <data name="EventoLocalidadeObrigatorio" xml:space="preserve">
+    <value>Localização do evento é obrigatória.</value>
+  </data>
+  <data name="EventoObrigatorio" xml:space="preserve">
+    <value>O evento é obrigatório.</value>
+  </data>
+  <data name="EventoTituloLimiteDeCaracteres" xml:space="preserve">
+    <value>Título do evento dever possuir de {0} à {1} caracteres.</value>
+  </data>
+  <data name="EventoTituloObrigatorio" xml:space="preserve">
+    <value>Título do evento é obrigatório.</value>
+  </data>
+  <data name="LocalidadeBairroObrigatorio" xml:space="preserve">
+    <value>Bairro da localidade é obrigatório.</value>
+  </data>
+  <data name="LocalidadeCepInvalido" xml:space="preserve">
+    <value>CEP da localidade inválido.</value>
+  </data>
+  <data name="LocalidadeCidadeObrigatorio" xml:space="preserve">
+    <value>Cidade da localidade é obrigatório.</value>
+  </data>
+  <data name="LocalidadeEstadoMaximoTresCaracteres" xml:space="preserve">
+    <value>Estado da localidade dever possuir no máximo de 2 caracteres.</value>
+  </data>
+  <data name="LocalidadeEstadoObrigatorio" xml:space="preserve">
+    <value>Estado da localidade é obrigatório.</value>
+  </data>
+  <data name="LocalidadeLogradouroObrigatorio" xml:space="preserve">
+    <value>Logradouro da localidade é obrigatório.</value>
+  </data>
+  <data name="LocalidadeNomeLimiteDeCaracteres" xml:space="preserve">
+    <value>Nome da localidade dever possuir de {0} à {1} caracteres.</value>
+  </data>
+  <data name="LocalidadeNomeObrigatorio" xml:space="preserve">
+    <value>Nome da localidade é obrigatório.</value>
+  </data>
+  <data name="LocalidadeNumeroObrigatorio" xml:space="preserve">
+    <value>Número da localidade é obrigatório.</value>
+  </data>
+  <data name="LocalidadeTipoLimiteDeCaracteres" xml:space="preserve">
+    <value>Tipo da localidade dever possuir de {0} à {1} caracteres.</value>
+  </data>
+  <data name="LocalidadeTipoObrigatorio" xml:space="preserve">
+    <value>Tipo da localidade é obrigatório.</value>
+  </data>
+  <data name="MaximoCaracteres" xml:space="preserve">
+    <value>Máximo de {0} caracteres.</value>
+  </data>
+  <data name="MinimoCaracteres" xml:space="preserve">
+    <value>Minimo de {2} caracteres no campo {0}.</value>
+  </data>
+  <data name="NomeInvalido" xml:space="preserve">
+    <value>Nome inválido.</value>
+  </data>
+  <data name="NomeObrigatorio" xml:space="preserve">
+    <value>O nome é obrigatório.</value>
+  </data>
+  <data name="PaisNomeLimiteDeCaracteres" xml:space="preserve">
+    <value>Nome do país dever possuir de {0} à {1} caracteres.</value>
+  </data>
+  <data name="PaisNomeObrigatorio" xml:space="preserve">
+    <value>Nome do país é obrigatório.</value>
+  </data>
+  <data name="PaisObrigatorio" xml:space="preserve">
+    <value>País é obrigatório.</value>
+  </data>
+  <data name="PaisSiglaLimiteDeCaracteres" xml:space="preserve">
+    <value>Sigla do país dever possuir de {0} à {1} caracteres.</value>
+  </data>
+  <data name="SenhasNaoCompativeis" xml:space="preserve">
+    <value>Confirmar Senha não compativel com Senha.</value>
+  </data>
+</root>

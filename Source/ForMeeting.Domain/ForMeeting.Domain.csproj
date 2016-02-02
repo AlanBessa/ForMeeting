@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{264F14D0-7D5A-47A3-AD06-1DD990971BAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ForMeeting.Domain</RootNamespace>
+    <AssemblyName>ForMeeting.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DomainValidation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\DomainValidation.1.0.0\lib\net451\DomainValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site\Entidades\Associado.cs" />
+    <Compile Include="Site\Entidades\Categoria.cs" />
+    <Compile Include="Site\Entidades\Cidade.cs" />
+    <Compile Include="Site\Entidades\Comentario.cs" />
+    <Compile Include="Site\Entidades\Estado.cs" />
+    <Compile Include="Site\Entidades\Evento.cs" />
+    <Compile Include="Site\Entidades\Localidade.cs" />
+    <Compile Include="Site\Entidades\Pais.cs" />
+    <Compile Include="Site\Entidades\Usuario.cs" />
+    <Compile Include="Site\Enum\AtivacaoEnum.cs" />
+    <Compile Include="Site\Enum\PapelEnum.cs" />
+    <Compile Include="Site\Enum\StatusDoEventoEnum.cs" />
+    <Compile Include="Site\Interfaces\Repositorios\IAssociadoRepository.cs" />
+    <Compile Include="Site\Interfaces\Repositorios\IUsuarioRepository.cs" />
+    <Compile Include="Site\Validacoes\Scopes\Associados\AssociadoEstaAptoParaCadastro.cs" />
+    <Compile Include="Site\Validacoes\Scopes\Associados\AssociadoEstaValido.cs" />
+    <Compile Include="Site\Validacoes\Scopes\Categorias\CategoriaEstaValido.cs" />
+    <Compile Include="Site\Validacoes\Scopes\Usuarios\UsuarioAptoParaCadastro.cs" />
+    <Compile Include="Site\Validacoes\Specs\Associados\AssociadoDevePossuirCpfUnicoCadastradoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Cidades\CidadeComEstadoRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Cidades\CidadeComNomeLimiteDeCaracteresSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Cidades\CidadeComNomeRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Scopes\Cidades\CidadeEstaValido.cs" />
+    <Compile Include="Site\Validacoes\Scopes\Comentarios\ComentarioEstaValido.cs" />
+    <Compile Include="Site\Validacoes\Scopes\Estados\EstadoEstaValido.cs" />
+    <Compile Include="Site\Validacoes\Scopes\Localidades\LocalidadeEstaValido.cs" />
+    <Compile Include="Site\Validacoes\Specs\Categorias\CategoriaComNomeLimiteDeCaracteresSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Categorias\CategoriaComNomeRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Estados\EstadoComNomeLimiteDeCaracteresSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Estados\EstadoComNomeRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Estados\EstadoComPaisRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Estados\EstadoComSiglaLimiteDeCaracteresSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Estados\EstadoComSiglaRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Eventos\EventoComCriadorRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Eventos\EventoComDescricaoLimiteDeCaracteresSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Eventos\EventoComDescricaoRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Eventos\EventoComLocalidadeRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Eventos\EventoComTituloLimiteDeCaracteresSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Eventos\EventoComTituloRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Scopes\Usuarios\UsuarioEstaValido.cs" />
+    <Compile Include="Site\Validacoes\Specs\Comentarios\ComentarioComAutorRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Comentarios\ComentarioComDescricaoValidaSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Comentarios\ComentarioComEventoRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Scopes\Eventos\EventoEstaValido.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComBairroRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComCepValidoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComCidadeRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComEventoObrigatorioSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComLogradouroRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComNomeLimiteDeCaracteresSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComNomeRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComNumeroRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComTipoLimiteDeCaracteresSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Localidades\LocalidadeComTipoRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Scopes\Paises\PaisEstaValido.cs" />
+    <Compile Include="Site\Validacoes\Specs\Paises\PaisComNomeLimiteDeCaracteresSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Paises\PaisComNomeRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Paises\PaisComSiglaLimiteDeCaracteresSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Usuarios\UsuarioComCampoEmailRequeridoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Usuarios\UsuarioComCampoEmailValidoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Associados\AssociadoComCampoNomeValidoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Associados\AssociadoComDataDeNascimentoValidoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Associados\AssociadoPossueCpfValidoSpecs.cs" />
+    <Compile Include="Site\Validacoes\Specs\Usuarios\UsuarioDevePossuirEmailUnicoCadastradoSpecs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Site\Interfaces\Servicos\" />
+    <Folder Include="Site\Servicos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ForMeeting.SharedKernel\ForMeeting.SharedKernel.csproj">
+      <Project>{401a1401-2175-480b-9a0b-b5da2a09a7e0}</Project>
+      <Name>ForMeeting.SharedKernel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
